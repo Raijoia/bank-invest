@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
+import Footer from '../Footer';
 import NavBar from '../NavBar';
 
 const PaginaPadrao = () => {
@@ -7,6 +8,7 @@ const PaginaPadrao = () => {
     <div className="scroll-smooth">
       <NavBar />
       <Outlet />
+      <Footer />
     </div>
   );
 };

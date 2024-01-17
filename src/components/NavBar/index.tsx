@@ -10,7 +10,7 @@ function NavBar() {
   const navigate = useNavigate();
 
   return (
-    <header className="flex flex-1 justify-around p-7 items-center">
+    <header className="flex flex-1 justify-between p-7 items-center">
       <h1 className="font-mono font-extrabold">Bank Invest</h1>
       <Box sx={{ width: 500 }}>
         <BottomNavigation
@@ -19,6 +19,7 @@ function NavBar() {
           onChange={(_event, newValue) => {
             setValue(newValue);
           }}
+          className="flex flex-1 justify-around p-7 items-center ml-14"
         >
           <BottomNavigationAction
             label="Home"
