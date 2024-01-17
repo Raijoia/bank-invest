@@ -1,35 +1,50 @@
 import Cota from '../../components/Cota';
 
-import { Box, Button } from '@mui/material';
+import { Button } from '@mui/material';
+
+const cotas = {
+  imobiliario: ['TVRI11', 'MXRF11', 'BTLG11', 'PORD11'],
+  emprestimo: ['CDB', 'Tesouro Selic'],
+  empresas: ['MGLU3', 'AMZO34', 'AMER3'],
+  bancos: ['BBDC4', 'ITSA4', 'BBAS3', 'BCSA34']
+};
+console.log(cotas);
 
 const Home = () => {
   return (
-    <Box className="flex flex-1 flex-col items-center gap-5 bg-slate-100 rounded-xl h-96 ml-10 mr-10">
+    <div className="flex flex-1 flex-col items-center gap-5 bg-slate-100 rounded-xl h-96 ml-10 mr-10">
       <h2 className="font-mono pt-5">Cotações:</h2>
-      <Box className="flex gap-10">
+      <div className="flex gap-10">
         <Cota name="Imobiliário">
-          <Button variant="contained">TVRI11</Button>
-          <Button variant="contained">Mxrf11</Button>
-          <Button variant="contained">BTLG11</Button>
-          <Button variant="contained">PORD11</Button>
+          {cotas.imobiliario.map((cota, index) => (
+            <Button variant="contained" key={index}>
+              {cota}
+            </Button>
+          ))}
         </Cota>
         <Cota name="Empréstimo">
-          <Button variant="contained">CDB</Button>
-          <Button variant="contained">Tesouro Selic</Button>
+          {cotas.emprestimo.map((cota, index) => (
+            <Button variant="contained" key={index}>
+              {cota}
+            </Button>
+          ))}
         </Cota>
         <Cota name="Empresas">
-          <Button variant="contained">MGLU3</Button>
-          <Button variant="contained">AMZO34</Button>
-          <Button variant="contained">AMER3</Button>
+          {cotas.empresas.map((cota, index) => (
+            <Button variant="contained" key={index}>
+              {cota}
+            </Button>
+          ))}
         </Cota>
         <Cota name="Bancos">
-          <Button variant="contained">BBDC4</Button>
-          <Button variant="contained">ITSA4</Button>
-          <Button variant="contained">BBAS3</Button>
-          <Button variant="contained">BCSA34</Button>
+          {cotas.bancos.map((cota, index) => (
+            <Button variant="contained" key={index}>
+              {cota}
+            </Button>
+          ))}
         </Cota>
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 };
 
