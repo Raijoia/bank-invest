@@ -1,8 +1,6 @@
-import { Button } from '@mui/material';
+import type { ButtonCotaProps } from '../../interface/interfaces';
 
-interface ButtonCotaProps {
-  cota: string;
-}
+import { Button } from '@mui/material';
 
 const ButtonCota = ({ cota }: ButtonCotaProps) => {
   return (

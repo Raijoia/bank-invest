@@ -1,9 +1,4 @@
-import React from 'react';
-
-interface CotaProps {
-  name: string;
-  children: React.ReactNode;
-}
+import type { CotaProps } from '../../interface/interfaces';
 
 const Cota = ({ children, name }: CotaProps) => {
   return (

@@ -7,7 +7,6 @@ const cotas = {
   empresas: ['MGLU3', 'AMZO34', 'AMER3'],
   bancos: ['BBDC4', 'ITSA4', 'BBAS3', 'BCSA34']
 };
-console.log(cotas);
 
 const Home = () => {
   return (
