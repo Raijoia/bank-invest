@@ -1,6 +1,6 @@
 # Bank Invest
 
-### Em Andamento
+### Finalizado
 
 ## Resumo
 Projeto para o monitoramento de ações do Brasil
