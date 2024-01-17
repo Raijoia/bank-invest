@@ -1,6 +1,5 @@
+import ButtonCota from '../../components/ButtonCota';
 import Cota from '../../components/Cota';
-
-import { Button } from '@mui/material';
 
 const cotas = {
   imobiliario: ['TVRI11', 'MXRF11', 'BTLG11', 'PORD11'],
@@ -17,30 +16,22 @@ const Home = () => {
       <div className="flex gap-10">
         <Cota name="Imobiliário">
           {cotas.imobiliario.map((cota, index) => (
-            <Button variant="contained" key={index}>
-              {cota}
-            </Button>
+            <ButtonCota cota={cota} key={index} />
           ))}
         </Cota>
         <Cota name="Empréstimo">
           {cotas.emprestimo.map((cota, index) => (
-            <Button variant="contained" key={index}>
-              {cota}
-            </Button>
+            <ButtonCota cota={cota} key={index} />
           ))}
         </Cota>
         <Cota name="Empresas">
           {cotas.empresas.map((cota, index) => (
-            <Button variant="contained" key={index}>
-              {cota}
-            </Button>
+            <ButtonCota cota={cota} key={index} />
           ))}
         </Cota>
         <Cota name="Bancos">
           {cotas.bancos.map((cota, index) => (
-            <Button variant="contained" key={index}>
-              {cota}
-            </Button>
+            <ButtonCota cota={cota} key={index} />
           ))}
         </Cota>
       </div>
