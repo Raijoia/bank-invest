@@ -5,7 +5,7 @@ import NavBar from '../NavBar';
 
 const PaginaPadrao = () => {
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth h-screen">
       <NavBar />
       <Outlet />
       <Footer />
